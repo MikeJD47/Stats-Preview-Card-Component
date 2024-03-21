@@ -1,0 +1,179 @@
+/*Global*/
+:root {
+  /*Colors*/
+  --main-background-color: hsl(233, 47%, 7%);
+  --card-background-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+
+  --main-heading-stats: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Inter";
+  background-color: var(--main-background-color);
+  z-index: 0;
+}
+
+.card {
+  max-width: 1000px;
+  height: 500px;
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  background-color: var(--card-background-color);
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+p {
+  font-weight: 400;
+}
+
+.info {
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 60px 100px 60px 60px;
+}
+
+.banner {
+  background-color: var(--accent-color);
+  grid-row: 1;
+  grid-column: 2;
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-heading {
+  color: var(--main-heading-stats);
+  font-size: 2rem;
+}
+
+.main-paragraph {
+  color: var(--main-paragraph);
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.accent {
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stat-heading {
+  color: var(--main-heading-stats);
+  font-size: 1.4rem;
+}
+
+.stat-para {
+  color: var(--stat-headings);
+  font-family: "Lexend Deca";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.image {
+  filter: opacity(40%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Mobile breakpoint*/
+@media screen and (max-width: 425px) {
+  body {
+    text-align: center;
+  }
+
+  .card {
+    max-width: 350px;
+    height: 850px;
+    display: grid;
+    grid: 30% 70% / 1fr;
+    text-align: center;
+    margin: auto 25px;
+  }
+
+  .info {
+    grid-row: 2;
+    grid-column: 1;
+    margin: 12% 8%;
+  }
+
+  .banner {
+    background-color: var(--accent-color);
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto 0;
+    width: auto;
+  }
+
+  .stats {
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 35px;
+  }
+  .stat {
+    padding-top: 30px;
+  }
+}
+
+/*Tablet*/
+@media screen and (max-width: 900px) and (min-width: 426px) {
+  .card {
+    max-width: 900px;
+    min-width: 426;
+    height: 500px;
+    display: grid;
+    grid: 40% 60% / 1fr;
+    text-align: center;
+    margin: auto 25px;
+  }
+
+  .info {
+    max-width: 700px;
+    grid-row: 2;
+    grid-column: 1;
+    margin: 5% 8%;
+  }
+
+  .banner {
+    background-color: var(--accent-color);
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto 0;
+    width: auto;
+  }
+  .stats {
+    margin-top: 30px;
+  }
+
+  .image {
+    filter: opacity(40%);
+    width: 100%;
+    height: 100%;
+    object-position: 50% 70%;
+  }
+}
