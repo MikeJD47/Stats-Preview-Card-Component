@@ -28,15 +28,15 @@ Users should be able to:
 
 #### Desktop screenshot (>900px)
 
-[](/screenshots/Desktop-Screenshot.png)
+[Desktop Screenshot](/screenshots/Desktop-Screenshot.png)
 
 #### Tablet screenshot (426px-900px)
 
-[](/screenshots/Tablet-Screenshot.png)
+[Tablet Screenshot](/screenshots/Tablet-Screenshot.png)
 
 #### Mobile screenshot (<426px)
 
-[](/screenshots/Mobile-Screenshot.png)
+[Mobile Screenshot](/screenshots/Mobile-Screenshot.png)
 
 ## My process
 
